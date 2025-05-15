@@ -1,0 +1,706 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header0
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 60px; /* Définit une hauteur minimale pour le header */
+    background-color: #292929;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    align-items: center; /* Centre verticalement les éléments */
+    justify-content: space-between; /* Espace entre les éléments */
+    padding: 10px 20px; /* Ajoute un espacement interne */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+.icones
+{
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espace entre l'icône et le texte */
+    margin-left: 0; /* Ajustez selon vos besoins */
+}
+.tel
+{
+    width: 20px; /* Ajustez la taille de l'icône */
+    height: auto; /* Ajustez la hauteur de l'icône */
+    margin-left: 15px; /* Ajoute un espace à gauche du téléphone */
+    /* Animation pour les liens de navigation */
+    display: inline-block;/* Nécessaire pour appliquer transform */
+    transform: transform 0.3s ease-in-out; /* Animation fluide */
+}
+.tel :hover
+{
+    transform: translateY(-5px); /* Déplace légèrement vers le haut */
+}
+.icones span 
+{
+    font-size: 1em;
+    color: #696060; /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+    /* Animation pour les liens de navigation */
+    display: inline-block;/* Nécessaire pour appliquer transform */
+    transform: transform 0.3s ease-in-out; /* Animation fluide */
+}
+.icones span:hover
+{
+    transform: translateY(-5px); /* Déplace légèrement vers le haut */
+}
+#panier
+{
+    width: 20px; /* Ajustez la taille de l'icône */
+    height: auto; /* Ajustez la hauteur de l'icône */
+    margin-right: 20px; /* Ajoute un espace à droite du panier */
+    vertical-align: middle; /* Aligne verticalement l'image avec le texte */
+    animation: bougerPanier 3s infinite; /* Applique l'animation en boucle */
+}
+.conteneur1
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo
+{
+    width: 50px /*Ajuster la largeur*/;
+    height: auto; /*Ajuster la hauteur*/
+}
+.conteneur1 p
+{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #43e050;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: small-caps;
+    text-transform: uppercase;
+}
+.navbar
+{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    box-sizing: border-box;
+}
+.navbar a
+{
+    align-items: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+    letter-spacing: -0.8px;
+    word-spacing: 0.2px;
+    font-weight: 400;
+    font-style: none;
+    font-variant: normal;
+    text-transform: lowercase;
+
+}
+.navbar ul
+{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li
+{
+    margin: 0;
+}
+.navbar ul li a
+{
+    color: #ff9100;
+    font-weight: bold;
+    text-decoration: none;
+    align-items: center;/* Centre verticalement les éléments dans le lien */
+    /* Animation pour les liens de navigation */
+    display: inline-block;/* Nécessaire pour appliquer transform */
+    transform: transform 0.3s ease-in-out; /* Animation fluide */
+    cursor: pointer; /* Change le curseur au survol */
+}
+.navbar ul li a:hover 
+{
+    transform: translateY(-5px); /* Déplace légèrement vers le haut */
+}
+.section1
+{
+    background-image: url("img_font_site_web.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20%;
+    text-align: center;
+}
+.section1 #animation_titre 
+{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: "Arial Black", Gadget, sans-serif;
+    letter-spacing: 0.8px;
+    word-spacing: 2px;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #38e432, 0 0 30px #38e432, 0 0 40px #38e432, 0 0 55px #38e432, 0 0 75px #38e432;
+}
+.section1 p
+{
+    text-align: center;
+    border-color: #f3e0b7;
+    font-size: 1.5em;
+    border-width: 2px;
+    text-decoration: solid ;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-variant: small-caps;
+    text-shadow: 4px 7px 4px rgb(73, 72, 69);
+    color: rgb(255, 255, 255);
+    background-color: #494a4b;
+    padding: 2%;
+    opacity: 0.5;
+    border-radius: 15px 50px 30px;
+}
+.section2 
+{
+    background-image: url("img_background_body.jpg"); /* Chemin de l'image */
+    background-size: cover; /* L'image couvre toute la section */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    padding: 10%; /* Ajoute un espacement autour du contenu */
+    color: #333; /* Couleur du texte */
+    text-align: center; /* Centre le texte */
+}
+.section2 h2
+{
+    text-align: center;
+    padding: 10px;
+    background-color: #e9eff5;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 25px;
+    letter-spacing: -0.4px;
+    word-spacing: 2px;
+    color: #0B0B0F;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: uppercase;
+}
+.conteneur2
+{
+    display: flex;
+    flex-direction: row; /* Aligne les éléments verticalement */
+    gap: 20px;
+    justify-content: center;  /* Centre les éléments horizontalement */
+    align-items: center;
+    background: #eff4f5;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1%; /* Espacement autour de la section */
+}
+.carousel 
+{
+    max-width: 600dvh; /* Limite la largeur maximale */
+    height: auto;
+    overflow: hidden; /* Cache les images qui dépassent */
+    margin: 0 ; /* Centre le carrousel */
+    border-radius: 10px; /* Ajoute des coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+    position: relative; /* Nécessaire pour positionner les éléments internes */
+}
+.carousel-images 
+{
+    display: flex; /* Aligne les images en ligne */
+    transition: transform 0.2s ease-in-out; /* Animation pour le défilement */
+}
+.carousel-images img 
+{
+    width: 100%; /* Chaque image prend toute la largeur du carrousel */
+    height: 300px; /* Hauteur fixe pour toutes les images */
+    object-fit: cover; /* Ajuste la taille de l'image */
+    flex-shrink: 0; /* Empêche les images de rétrécir */
+    border-radius: 5px; /* Ajoute des coins arrondis */
+}
+.carousel p 
+{
+    position: absolute; /* Positionne le texte par rapport au carrousel */
+    bottom: 10px; /* Positionne le texte en bas */
+    left: 50%; /* Positionne le texte au centre */
+    transform: translateX(-50%); /* Centre le texte horizontalement */
+    padding: 10px; /* Ajoute un espacement intérieur */
+    background: rgba(0, 0, 0, 0.5); /* Ajoute un fond semi-transparent */
+    color: #fff; /* Couleur du texte */
+    border-radius: 5px; /* Ajoute des coins arrondis aux images (optionnel) */
+    font-size: 0.8em; /* Ajuste la taille du texte */
+    white-space: wrap; /* Permet au text de passer a la ligne le texte de passer à la ligne */
+}
+.carousel p strong 
+{
+    color: rgb(255, 145, 0);
+    size: 20px;
+    font-size: 0.9em; /* Ajuste la taille du texte */
+    text-align: center; /* Centre le texte */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+}
+footer
+{
+    display: flex;
+    flex-wrap: wrap; /* Passe à la ligne si nécessaire */
+    justify-content: space-between; /* Espace les éléments */
+    padding: 03%;
+    text-align: left; /* Aligne le texte à gauche */
+    background-image: url("img_font_footer.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Nécessaire pour superposer du contenu */
+}
+footer div
+{
+   flex: 1 1 1 20%; /* Ajuste la largeur des colonnes */
+   margin: 10px; /* Ajoute un espacement autour des colonnes */
+}
+footer h2
+{
+    font-size: 1.5em;
+    margin-bottom: 20px; /* Ajoute un espacement en bas */
+    text-align: center; /* Centre le texte */
+    color: #eff4f5; /* Couleur du texte */
+}
+footer form, footer ul, footer p
+{
+    margin: 0 auto; /* Centre le formulaire */
+    padding: 0;
+    text-align: left; /* Aligner le texte à gauche */
+    color: #eff4f5; /* Couleur du texte */
+}
+footer form
+{
+    flex-wrap: wrap; /* Passe à la ligne si nécessaire */
+}
+footer form label
+{
+    color: #eff4f5; /* Couleur du texte */
+}
+footer form input, footer form textarea
+{
+    width: 100%; /* Prend toute la largeur de la colonne */
+    margin: 5px 0; /* Ajoute un espacement entre les éléments */
+    padding: 10px; /* Ajoute un espacement intérieur */
+    box-sizing: border-box; /* Inclut les bordures dans la largeur */
+    border: 1px solid #ccc; /* Ajoute une bordure grise */
+    border-radius: 5px; /* Ajoute des coins arrondis */
+}
+footer ul
+{
+    list-style: none; /* Supprime les puces */
+    padding: 0; /* Supprime le padding=marges par défaut */
+    text-align: left; /* aligne les elements de la liste à gauche */
+    margin: 0;
+    color: #FFFFFF; /* Couleur du texte */
+}
+footer ul li img
+{
+    width: 35px; /* Ajuste la taille de l'icône */
+    height: 25; /* Ajuste la hauteur de l'icône */
+    margin-right: 10px; /* Ajoute un espacement à droite de l'icône */
+}
+footer ul li a
+{
+    text-decoration: none;
+    color: #FFF;
+}
+footer ul li a:hover
+{
+    text-decoration: underline; /* Ajoute un soulignement au survol */
+    color: #75c4e4; /* Change la couleur du texte au survol */
+}
+footer #adresse
+{
+    text-align: left; /* Centre le texte */
+    color: #ffffff;
+}
+
+/*JJJJJCJZJOZIUDZUZDZDZDdzdozfcscbjbjcu*/
+
+
+.header1
+{
+    position: relative;
+    margin: 0;
+    height: 15%;
+    width: 100vW;
+    z-index: 1000;
+    top: 0;
+    background-color: #1a1616;
+    margin-top: 70px; /* Ajoute un espace pour éviter que le header1 soit caché */
+}
+.header2 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100vw;
+    z-index: 1001;
+    margin-top: 0; /* Ajoute un espace sous le premier header */
+    background-color: #1f1e1e;
+    padding: 20px;
+    text-align: center;
+    border-radius: 3px;
+}
+/* Styles généraux pour le header */
+.header2, .header1 
+{
+    width: 100%; /* Prend toute la largeur de l'écran */
+    display: flex; /* Active Flexbox */
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    align-items: center; /* Centre verticalement les éléments */
+    justify-content: space-between; /* Espace entre les éléments */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+.header2-container 
+{
+    display: flex; /* Aligne les éléments horizontalement */
+    align-items: center; /* Centre verticalement les éléments */
+    justify-content: space-between; /* Ajoute de l'espace entre la barre de recherche et l'icône */
+    gap: 50px; /* Ajoute un espace entre les éléments */
+}
+.icone-panier ul li a span
+{
+    color: #ff7b00;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+}
+.icone-panier ul li #traitement
+{
+    color: #cc5f17;
+    font-style: normal;
+    text-decoration: none;
+}
+.body2
+{
+    opacity: 20px ;
+    background-image: url("photo-info.jpg.jfif");
+}
+.section-liens
+{
+    color: #e0dada;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.section-liens ul
+{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.section-liens a
+{
+    text-transform: lowercase;
+    text-decoration: none;
+}
+.section3
+{
+    background-color: rgb(112, 112, 112);
+    display: flex; /* Active Flexbox */
+    flex-wrap: wrap; /* Permet de passer à la ligne si l'espace est insuffisant */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 20px; /* Ajoute un espace entre les éléments */
+    padding: 50px; /* Ajoute un espacement interne */
+    text-align: center; /* Centre le texte dans la section */
+}
+.section3 h2 
+{
+    font-family: "Courier New", Courier, monospace; /* Police pour le titre */
+    font-size: 30px; /* Taille du texte */
+    letter-spacing: 0px; /* Espacement entre les lettres */
+    word-spacing: 2px; /* Espacement entre les mots */
+    color: #dacece; /* Couleur du texte */
+    font-weight: 400; /* Poids du texte */
+    text-decoration: none; /* Supprime les décorations */
+    font-style: italic; /* Style italique */
+    font-variant: normal; /* Variante normale */
+    text-transform: none; /* Pas de transformation du texte */
+}
+.conteneur3
+{
+    justify-content: center;
+    display: flex; /* Active Flexbox pour aligner les divs */
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    gap: 50px; /* Ajoute un espace entre les divs */
+    background: #f7f4f4e8;
+    border-radius: 20px;
+    padding: 5%; /* Espacement autour de la section */
+}
+.conteneur3 .produit 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centrer les éléments si tu veux */
+    max-width: 300px; /* largeur fixe ou responsive */
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.infos {
+    text-align: center; /* ou left si tu préfères */
+}
+
+.infos button {
+    margin: 5px; /* Ajoute un espacement autour des boutons */
+}
+.conteneur3 .produit img
+{
+    max-width: 100%; /* Empêche les images de dépasser la largeur du conteneur */
+    height: auto; /* Conserve les proportions des images */
+    margin-bottom: 10px; /* Ajoute un espace entre l'image et le texte */
+}
+.conteneur3 .produit p
+{
+    font-size: 20px; /* Ajuste la taille du texte */
+    color: #333; /* Couleur du texte */
+    margin: 0; /* Supprime la marge par défaut */
+    text-align: center; /* Centre le texte */
+}
+.section4
+{
+    background-color:  rgb(112, 112, 112);
+    display: flex; /* Active Flexbox */
+    flex-wrap: wrap; /* Permet de passer à la ligne si l'espace est insuffisant */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 20px; /* Ajoute un espace entre les éléments */
+    padding: 50px; /* Ajoute un espacement interne */
+    text-align: center; /* Centre le texte dans la section */
+}
+.section4 h2 
+{
+    font-family: "Courier New", Courier, monospace; /* Police pour le titre */
+    font-size: 25px; /* Taille du texte */
+    letter-spacing: 0px; /* Espacement entre les lettres */
+    word-spacing: 2px; /* Espacement entre les mots */
+    color: #000000; /* Couleur du texte */
+    font-weight: 400; /* Poids du texte */
+    text-decoration: none; /* Supprime les décorations */
+    font-style: italic; /* Style italique */
+    font-variant: normal; /* Variante normale */
+    text-transform: none; /* Pas de transformation du texte */
+}
+.conteneur4
+{
+    background: #f7f4f4e8;
+    justify-content: center;
+    display: flex; /* Active Flexbox pour aligner les divs */
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    gap: 50px; /* Ajoute un espace entre les divs */
+    border-radius: 20px;
+    padding: 5%;
+}
+.conteneur4 .produit 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centrer les éléments si tu veux */
+    max-width: 300px; /* largeur fixe ou responsive */
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.conteneur4 .produit img
+{
+    max-width: 100%; /* Empêche les images de dépasser la largeur du conteneur */
+    height: auto; /* Conserve les proportions des images */
+    margin-bottom: 10px; /* Ajoute un espace entre l'image et le texte */
+}
+.conteneur4 .produit p
+{
+    font-size: 20px; /* Ajuste la taille du texte */
+    color: #333; /* Couleur du texte */
+    margin: 0; /* Supprime la marge par défaut */
+    text-align: center; /* Centre le texte */
+}
+.section5
+{
+    background-color:  rgb(112, 112, 112);
+    display: flex; /* Active Flexbox */
+    flex-wrap: wrap; /* Permet de passer à la ligne si l'espace est insuffisant */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 20px; /* Ajoute un espace entre les éléments */
+    padding: 50px; /* Ajoute un espacement interne */
+    text-align: center; /* Centre le texte dans la section */
+}
+.section5 h2 
+{
+    font-family: "Courier New", Courier, monospace; /* Police pour le titre */
+    font-size: 25px; /* Taille du texte */
+    letter-spacing: 0px; /* Espacement entre les lettres */
+    word-spacing: 2px; /* Espacement entre les mots */
+    color: #000000; /* Couleur du texte */
+    font-weight: 400; /* Poids du texte */
+    text-decoration: none; /* Supprime les décorations */
+    font-style: italic; /* Style italique */
+    font-variant: normal; /* Variante normale */
+    text-transform: none; /* Pas de transformation du texte */
+}
+.conteneur5
+{
+    background: #f7f4f4e8;
+    justify-content: center;
+    display: flex; /* Active Flexbox pour aligner les divs */
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    gap: 50px; /* Ajoute un espace entre les divs */
+    border-radius: 20px;
+    padding: 5%;
+}
+.conteneur5 .produit 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centrer les éléments si tu veux */
+    max-width: 300px; /* largeur fixe ou responsive */
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.conteneur5 .produit img
+{
+    max-width: 100%; /* Empêche les images de dépasser la largeur du conteneur */
+    height: auto; /* Conserve les proportions des images */
+    margin-bottom: 10px; /* Ajoute un espace entre l'image et le texte */
+}
+.conteneur5 .produit p
+{
+    font-size: 20px; /* Ajuste la taille du texte */
+    color: #333; /* Couleur du texte */
+    margin: 0; /* Supprime la marge par défaut */
+    text-align: center; /* Centre le texte */
+}
+div p
+{
+    font-size: 20px; /* Ajuste la taille du texte */
+    color: #333; /* Couleur du texte */
+    margin: 0;
+}
+.search-bar 
+{
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espace entre le champ de recherche et le bouton */
+    margin-left: auto; /* Aligne la barre de recherche à droite */
+    flex-grow: 20px; /* Permet à la barre de recherche de prendre plus d'espace */
+}
+.icones_2
+{
+    margin-left: 20px; /* Ajoute un espace entre la barre de recherche et l'icône */
+    display: flex;
+    align-items: center; /* Centre verticalement l'icône et le texte */
+    gap: 5px; /* Espace entre l'icône et le texte */
+}
+.icones_2 span
+{
+    color: #ffffff;
+}
+.tel_2
+{
+    gap: 5px;
+    width: 30px;
+    height: auto;
+}
+.search-bar input[type="text"] 
+{
+    padding: 5px 10px; /* Espacement interne */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 14px; /* Taille du texte */
+    width: 400px; /* Largeur du champ */
+}
+
+.search-bar button 
+{
+    padding: 5px 10px; /* Espacement interne */
+    background-color: #43e050; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprime la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur en forme de main */
+    font-size: 14px; /* Taille du texte */
+}
+
+.search-bar button:hover 
+{
+    background-color: #36b040; /* Couleur de fond au survol */
+}
+.add-au-panier
+{
+    display: inline-block;
+    margin-top: 10px; /* Ajoute un espace entre le texte et le bouton */
+    padding: 12px 20px; /* Espacement interne pour un bouton plus grand */
+    background-color: #ffc400; /* Couleur de fond (bleu professionnel) */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprime la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    cursor: pointer; /* Change le curseur au survol */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+    transition: all 0.3s ease; /* Ajoute une transition pour les effets */
+    text-align: center;
+}
+.add-au-panier:hover 
+{
+    background-color: #f5bf0d; /* Couleur plus foncée au survol */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Accentue l'ombre au survol */
+    transform: translateY(-2px); /* Légère élévation au survol */
+}
+.add-au-panier:active 
+{
+    background-color: #e9c00d; /* Couleur encore plus foncée lors du clic */
+    transform: translateY(0); /* Supprime l'élévation lors du clic */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Réduit l'ombre lors du clic */
+}
+.toggle-button {
+    background-color: transparent;
+    border: none;
+    color: #007BFF;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.toggle-button:hover {
+    color: #0056b3;
+}
